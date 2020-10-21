@@ -1,17 +1,43 @@
-/* Nav Bar */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+body {
+    margin: 0; 
+    background: #222;
+    /* font-family: */
+    font-weight: 300;
 }
 
-li {
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #55d6aa;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
     float: left;
 }
 
-li a {
-    display: block;
-    padding: 8px;
-    background-color: #dddddd;
+/* Nav Bar */
+nav {
+    float: right;
 }
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block; /* or float: left; */
+    margin-left: 70px;
+    padding-top: 25px;
+}
+
