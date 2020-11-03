@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="styles/style.css" />
 		<link rel="stylesheet" href="styles/blog-cards.css"/>
 		<link rel="stylesheet" href="styles/pagation.css"/>
+		<link rel="stylesheet" href="styles/zoomhover.css"/>
 		<link
  		   href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
  		   rel="stylesheet"
@@ -249,36 +250,90 @@
 
 		<!-- End of Nav Bar!! -->
 		<main>
+			 <!-- Trigger the Modal -->
+			 <img id="myImg" src="images/prettySunset.JPG" alt="Pretty Sunset" style="width:100%;max-width:500px"class="center"/>
 
-			<div class="wrapper">
-				<div class="blog_post">
-				<div class="img_pod">
-					<img src="images/profile.jpg" alt="profile image">
+			 <!-- The Modal -->
+			 <div id="myModal" class="modal">
+
+			 <!-- The Close Button -->
+			 <span class="close">&times;</span>
+
+			 <!-- Modal Content (The Image) -->
+			 <img class="modal-content" id="img01">
+
+			 <!-- Modal Caption (Image Text) -->
+			 <div id="caption"></div>
+			 </div>
+			 <p><hr class="bluegrey"></p>
+
+
+
+			<button class="tablink" onclick="openPage('Recent', this, 'red')" >Recent</button>
+			<button class="tablink" onclick="openPage('Notes', this, 'blue')">Notes</button>
+			<button class="tablink" onclick="openPage('Reviews', this, 'orange')">Reviews</button>
+			<button class="tablink" onclick="openPage('Random', this, 'green')">Random</button>
+
+			<div id="Recent" class="tabcontent">
+			<h3>Recent</h3>
+				<article> 
+					<div class="container_copy">
+						<h3>NOV. 2, 2029</h3>
+						<h1>Photo Profolio</h1>
+						<p>A few of my favorite pictures of flowers.</p>
+					</div>
+					<a class="btn_primary" href='html/projects/photography.html'>Read More</a>
+				</article>
+	
+				<article> 
+					<div class="container_copy">
+						<h3>NOV. 2, 2029</h3>
+						<h1>Photo Profolio</h1>
+						<p>A few of my favorite pictures of flowers.</p>
+					</div>
+					<a class="btn_primary" href='html/projects/photography.html'>Read More</a>
+				</article>
+				
+				<p><br></p>
+				<div class="center">
+					<div class="pagination">
+						<a href="#">&laquo;</a>
+						<a href="#" class="active">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">Last</a>
+						<a href="#">&raquo;</a>
+					</div>
 				</div>
+				<p><hr class="bluegrey"></p>
+
+					<p style="text-align:center;">Where to Find Me <br><br>
+					<a href="mailto:limesoda314@gmail.com" class="fa fa-google"></a>
+					<a href="https://www.linkedin.com/in/ann-marina-miyaguchi-5aa810164/" class="fa fa-linkedin"></a>
+					<a href="https://github.com/limesoda314" class="fa fa-github"></a></p>
+				</div>
+
+			<div id="Notes" class="tabcontent">
+			<h3>Notes</h3>
+			<article> 
 				<div class="container_copy">
 					<h3>NOV. 2, 2029</h3>
 					<h1>Photo Profolio</h1>
 					<p>A few of my favorite pictures of flowers.</p>
 				</div>
 				<a class="btn_primary" href='html/projects/photography.html'>Read More</a>
-				</div>
-			</div>
-  
-			<div class="wrapper">
-				<div class="blog_post">
-				<div class="img_pod">
-					<img src="images/profile.jpg" alt="profile image">
-				</div>
+			</article>
+
+			<article> 
 				<div class="container_copy">
 					<h3>NOV. 2, 2029</h3>
 					<h1>Photo Profolio</h1>
 					<p>A few of my favorite pictures of flowers.</p>
 				</div>
 				<a class="btn_primary" href='html/projects/photography.html'>Read More</a>
-				</div>
-			</div>
+			</article>
 			
-
+			<p><br></p>
 			<div class="center">
 				<div class="pagination">
 					<a href="#">&laquo;</a>
@@ -295,6 +350,87 @@
 				<a href="mailto:limesoda314@gmail.com" class="fa fa-google"></a>
 				<a href="https://www.linkedin.com/in/ann-marina-miyaguchi-5aa810164/" class="fa fa-linkedin"></a>
 				<a href="https://github.com/limesoda314" class="fa fa-github"></a></p>
+			</div>
+
+			<div id="Reviews" class="tabcontent">
+			<h3>Reviews</h3>
+			<article> 
+				<div class="container_copy">
+					<h3>NOV. 2, 2029</h3>
+					<h1>Photo Profolio</h1>
+					<p>A few of my favorite pictures of flowers.</p>
+				</div>
+				<a class="btn_primary" href='html/projects/photography.html'>Read More</a>
+			</article>
+
+			<article> 
+				<div class="container_copy">
+					<h3>NOV. 2, 2029</h3>
+					<h1>Photo Profolio</h1>
+					<p>A few of my favorite pictures of flowers.</p>
+				</div>
+				<a class="btn_primary" href='html/projects/photography.html'>Read More</a>
+			</article>
+			
+			<p><br></p>
+			<div class="center">
+				<div class="pagination">
+					<a href="#">&laquo;</a>
+					<a href="#" class="active">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">Last</a>
+					<a href="#">&raquo;</a>
+				</div>
+			</div>
+			<p><hr class="bluegrey"></p>
+
+				<p style="text-align:center;">Where to Find Me <br><br>
+				<a href="mailto:limesoda314@gmail.com" class="fa fa-google"></a>
+				<a href="https://www.linkedin.com/in/ann-marina-miyaguchi-5aa810164/" class="fa fa-linkedin"></a>
+				<a href="https://github.com/limesoda314" class="fa fa-github"></a></p>
+			</div>
+
+			<div id="Random" class="tabcontent">
+			<h3>Random</h3>
+			<article> 
+				<div class="container_copy">
+					<h3>NOV. 2, 2029</h3>
+					<h1>Photo Profolio</h1>
+					<p>A few of my favorite pictures of flowers.</p>
+				</div>
+				<a class="btn_primary" href='html/projects/photography.html'>Read More</a>
+			</article>
+
+			<article> 
+				<div class="container_copy">
+					<h3>NOV. 2, 2029</h3>
+					<h1>Photo Profolio</h1>
+					<p>A few of my favorite pictures of flowers.</p>
+				</div>
+				<a class="btn_primary" href='html/projects/photography.html'>Read More</a>
+			</article>
+			
+			<p><br></p>
+			<div class="center">
+				<div class="pagination">
+					<a href="#">&laquo;</a>
+					<a href="#" class="active">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+					<a href="#">Last</a>
+					<a href="#">&raquo;</a>
+				</div>
+			</div>
+			<p><hr class="bluegrey"></p>
+
+				<p style="text-align:center;">Where to Find Me <br><br>
+				<a href="mailto:limesoda314@gmail.com" class="fa fa-google"></a>
+				<a href="https://www.linkedin.com/in/ann-marina-miyaguchi-5aa810164/" class="fa fa-linkedin"></a>
+				<a href="https://github.com/limesoda314" class="fa fa-github"></a></p>
+			</div>
+
+			
 		</main>		
 
 
