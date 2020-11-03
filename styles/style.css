@@ -194,9 +194,18 @@ main {
   align-self: center;
   max-width: 80ch;
   padding: 3rem;
-  background: white;
 }
 
+article {
+  margin-top: 3rem; 
+  margin-left: 5rem;
+  align-self: center;
+  max-width: 80ch;
+  padding: 3rem;
+  background-color:white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+}
 footer {
   margin-top: auto;
   margin-left: 5rem;
@@ -209,6 +218,7 @@ footer {
   background-color: var(--bg-primary);
   transition: width 600ms ease;
   overflow: scroll;
+  z-index:1;
 }
 
 .navbar-nav {
@@ -322,6 +332,13 @@ footer {
   main {
     margin: 0;
   }
+  article {
+  margin-left: 0;
+  }
+  footer {
+    margin-bottom: 5rem;
+    margin-left: 0;
+  }
 }
 
 /* Large screens */
@@ -348,6 +365,13 @@ footer {
   .navbar:hover .logo-text
   {
     left: 0px;
+  }
+  article {
+    margin-left: 0;
+  }
+  footer {
+    margin-bottom: 5rem;
+    margin-left: 0;
   }
 }
 
