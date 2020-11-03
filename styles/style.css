@@ -168,7 +168,7 @@ body {
 /* END OF IMAGE THINGY */
 body {
   color: black;
-  background-color: white;
+  background-color: #EEEEEE;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -188,10 +188,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 main {
+  margin-top: 3rem; 
   margin-left: 5rem;
   align-self: center;
   max-width: 80ch;
   padding: 3rem;
+  background: white;
 }
 
 footer {
