@@ -169,9 +169,11 @@ body {
 body {
   color: black;
   background-color: white;
-  margin: 0;
-  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+
 
 body::-webkit-scrollbar {
   width: 0.25rem;
@@ -187,9 +189,18 @@ body::-webkit-scrollbar-thumb {
 
 main {
   margin-left: 5rem;
-  padding: 1rem;
+  align-self: center;
+  max-width: 80ch;
+  padding: 3rem;
 }
 
+footer {
+  margin-top: auto;
+  margin-left: 5rem;
+  align-self: center;
+  max-width: 80ch;
+  padding: 3rem;
+}
 .navbar {
   position: fixed;
   background-color: var(--bg-primary);
@@ -286,7 +297,7 @@ main {
 }
 /* media queries let you target specific devices/screens*/
 /* Small screens */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .navbar {
     bottom: 0;
     width: 100vw;
@@ -311,15 +322,15 @@ main {
 }
 
 /* Large screens */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
   .navbar {
     top: 0;
-    width: 5rem;
+    width: 5em;
     height: 100vh;
   }
 
   .navbar:hover {
-    width: 16rem;
+    width: 20rem;
   }
 
   .navbar:hover .link-text {
@@ -328,7 +339,7 @@ main {
 
   .navbar:hover .logo svg
   {
-    margin-left: 11rem;
+    margin-left: 15rem;
   }
 
   .navbar:hover .logo-text
@@ -372,4 +383,37 @@ main {
 
 .solar #solarIcon {
   display: block;
+}
+
+/*SOCIAL MEDIA BUTTONS*/
+ /* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* google */
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-github {
+  background: black;
+  color: white;
 }
