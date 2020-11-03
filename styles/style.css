@@ -433,3 +433,8 @@ footer {
   margin-right: auto;
   width: 50%;
 }
+
+hr.bluegrey {
+  border: none;       /*Gets rid of the ugly line underneath the dots*/
+  border-top: 1px dotted #999999; 
+}
