@@ -247,26 +247,31 @@
 			</nav>
 
 		<!-- End of Nav Bar!! -->
-				 <!-- MAIN (Center website) -->
-          <main>
-
-          <h1>LIMESODA</h1>
+		<!-- MAIN (Center website) -->
+        <main>
+		<article>
 
           <h2>PHOTO PORTFOLIO</h2>
-          <p>A small collection of my favorite photos I've that I've taken</p>
+          <p>A small collection of my favorite pictures of flowers that I've taken. Click on an image for an enlarged view.</p>
 
           <div class="row">
             <div class="column">
-              <img src="../../images/red_rose.JPG" alt="Red Rose" onclick="myFunction(this);">
+              <img src="../../images/red_rose.JPG" alt="Red Rose" onclick="myFunction(this);" class="responsive">
             </div>
             <div class="column">
-              <img src="../../images/yellow_flower.JPG" alt="Yellow Flower" onclick="myFunction(this);">
+              <img src="../../images/yellow_flower.JPG" alt="Yellow Flower" onclick="myFunction(this);" class="responsive">
             </div>
             <div class="column">
-              <img src="../../images/pretty_pink_flowers.JPG" alt="Sakura" onclick="myFunction(this);">
+              <img src="../../images/pretty_pink_flowers.JPG" alt="Sakura" onclick="myFunction(this);" class="responsive">
 			</div>
 			<div class="column">
-				<img src="../../images/dandelion.jpg" alt="Dandelion" onclick="myFunction(this);">
+				<img src="../../images/dandelion.jpg" alt="Dandelion" onclick="myFunction(this);" class="responsive">
+			 </div>
+			 <div class="column">
+              <img src="../../images/pink_flowers.JPG" alt="Pink Rose" onclick="myFunction(this);" class="responsive">
+			</div>
+			<div class="column">
+				<img src="../../images/yellow_rose.JPG" alt="Yellow Rose" onclick="myFunction(this);" class="responsive">
 			 </div>
           </div>
           
@@ -275,11 +280,12 @@
             <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
           
             <!-- Expanded image -->
-            <img id="expandedImg" style="width:100%">
+            <img id="expandedImg" style="width:100%" class="responsive">
           
             <!-- Image text -->
             <div id="imgtext"></div>
-          </div>
+		  </div>
+		</article>
           
         </main>  
 		
