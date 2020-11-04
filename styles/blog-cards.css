@@ -45,13 +45,6 @@ p {
   box-shadow: 0px 5px 1rem rgba(255, 94, 98, 0.5);
 }
 
-@media all and (max-width:30em){
-    .btn_primary{
-        display:block;
-        margin:0.2em auto;
-    }
- }
-
 
  /* Set height of body and the document to 100% to enable "full page tabs" */
 body, html {
@@ -84,3 +77,18 @@ body, html {
     height: 100%;
   }
   
+  .flex-parent {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; 
+  }
+  .jc-center {
+      justify-content: center; 
+  }
+
+  @media all and (max-width:30em){
+    .btn_primary{
+        display:block;
+        margin:0.2em auto;
+    }
+ }
