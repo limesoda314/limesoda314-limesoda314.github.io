@@ -5,12 +5,16 @@
   font-family: 'Open Sans';
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
-  --transition-speed: 600ms;
+  --text-third: #999;
+  --bg-primary: #162447;
+  --bg-secondary:#1f4068;
+  --bg-third: #1b1b2f;
+  --color-one: #e43f5a;
 }
 
 body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,6 +22,8 @@ body {
 }
 
 main {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
   margin-top: 3rem; 
   align-self: center;
   max-width: 80ch;
@@ -25,6 +31,8 @@ main {
 }
 
 article {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
   margin-top: 3rem; 
   align-self: center;
   max-width: 100ch;
@@ -49,58 +57,48 @@ hr.bluegrey {
   border-top: 1px dotted #999999; 
 }
 
-.container {
-  position: relative;
-  padding-bottom: 100%;
-  height: 100%;
-  overflow: hidden;
-  min-height: 100%
+
+h1 {
+  margin: 0 0 1rem 0;
+  font-size: 2.5rem;
+  letter-spacing: 0.5px;
+  color: var(--text-primary);
+}
+h2 {
+  margin: 0 0 1rem 0;
+  font-size: 2.5rem;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+}
+h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  color: var(--text-third);
 }
 
-body, html{ 
-  height: 100% 
+
+
+p {
+  margin: 0 0 4.5rem 0;
+  font-size: 1.5rem;
+  
 }
-.responsive-iframe {
-  position: relative;
-  display:block;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  min-height: 130%
-}
+
+
+
+
+
+
+
 
 /* media queries let you target specific devices/screens*/
 /* Small screens */
-@media only screen and (max-width: 700px) {
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  main {
-    margin-top: 3rem; 
-    align-self: center;
-    max-width: 80ch;
-    padding: 1rem;
-  }
-  
+@media only screen and (max-width: 700px) {=
   footer {
     margin-bottom: 5rem;
     margin-left: 0;
   }
-  article {
-    margin-top: 3rem; 
-    align-self: center;
-    max-width: 100ch;
-    padding: 3rem;
-    border-radius: 10px;
-    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
-  }
+
 }
 
 /* Large screens */
@@ -110,7 +108,6 @@ body, html{
     margin-bottom: 5rem;
   }
 }
-
 
 /*SOCIAL MEDIA BUTTONS*/
  /* Style all font awesome icons */
@@ -154,4 +151,26 @@ body, html{
 }
 
 
+/* PAGATION */ 
+.pagination {
+  display: inline-block;
+}
 
+.pagination a {
+  color: var(--text-third);
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #ff9966;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+  color: #333;
+}
