@@ -63,6 +63,7 @@ body, html {
     padding: 14px 16px;
     font-size: 17px;
     width: 8rem;
+    text-decoration: none;
   }
   
  .tablink:hover {
@@ -78,17 +79,22 @@ body, html {
   }
   
   .flex-parent {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap; 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; 
   }
   .jc-center {
-      justify-content: center; 
+    justify-content: center; 
   }
 
   @media all and (max-width:30em){
     .btn_primary{
-        display:block;
-        margin:0.2em auto;
+      display:block;
+      margin:0.2em auto;
     }
- }
+ 
+    .tablink {
+      display:block;
+      margin:0.2em auto;
+    }
+  }
