@@ -7,43 +7,16 @@ html {
   font-size: 12px;
 }
 
-h1 {
-  margin: 0 0 1rem 0;
-  font-size: 2.5rem;
-  letter-spacing: 0.5px;
-  color: #333;
-}
-h2 {
-  margin: 0 0 1rem 0;
-  font-size: 2.5rem;
-  letter-spacing: 0.5px;
-  color: #333;
-}
-h3 {
-  margin: 0 0 0.5rem 0;
-  color: #999;
-  font-size: 1.25rem;
-}
-
-
-
-p {
-  margin: 0 0 4.5rem 0;
-  font-size: 1.5rem;
-  color: #333;
-}
-
 .btn_primary {
   display:inline-block;
   border: none;
   outline: none;
-  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  background: linear-gradient(90deg, #e43f5a, #ff5e62);
   padding: 1.5rem 2rem;
   border-radius: 50px;
   text-align:center;
   color: white;
   font-size: 1.2rem;
-  box-shadow: 1px 10px 2rem rgba(255, 94, 98, 0.5);
   transition: all .2s ease-in;
   text-decoration: none;
 }
@@ -52,40 +25,6 @@ p {
   box-shadow: 0px 5px 1rem rgba(255, 94, 98, 0.5);
 }
 
-
- /* Set height of body and the document to 100% to enable "full page tabs" */
-body, html {
-  height: 100%;
-  margin: 0;
-  }
-  
-  /* Style tab links */
-  .tablink {
-    display:inline-block;
-    border: none;
-    outline: none;
-    background: linear-gradient(90deg, #ff9966, #ff5e62);
-    padding: 1.5rem 2rem;
-    border-radius: 50px;
-    text-align:center;
-    color: white;
-    font-size: 1.2rem;
-    box-shadow: 1px 10px 2rem rgba(255, 94, 98, 0.5);
-    transition: all .2s ease-in;
-    text-decoration: none;
-  }
-  
- .tablink:hover {
-    box-shadow: 0px 5px 1rem rgba(255, 94, 98, 0.5);
-  }
-  
-  /* Style the tab content (and add height:100% for full page content) */
-  .tabcontent {
-    color: white;
-    display: none;
-    padding: 100px 20px;
-    height: 100%;
-  }
   
   .flex-parent {
     display: flex;

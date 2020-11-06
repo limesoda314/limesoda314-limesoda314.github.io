@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="../../../styles/style.css" />
         <link rel="stylesheet" href="../../../styles/blog-cards.css"/>
         <link rel="stylesheet" href="../../../styles/pagation.css" />
-        <link rel="stylesheet" href="../../../styles/zoomhover.css"/>
+        <link rel="stylesheet" href="../../../styles/navbar.css"/>
 		<link
  		   href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
  		   rel="stylesheet"
@@ -16,44 +16,68 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
 
     </head>
+    
     <body> 
-        <article> 
-            <div class="container_copy">
-                <h3>NOV. 2, 2029</h3>
-                <h1>Photo Profolio</h1>
-                <p>A few of my favorite pictures of flowers.</p>
-            </div>
-            <a class="btn_primary" target="_parent" href='../../projects/photography.html'>Read More</a>
-        </article>
+        <!-- Navbar! -->
+	
+		<div class="bg-cover" class="none"></div>
+		<a class="hamburger-shell">
+			<div class="hamb top"></div>
+				<div class="hamb middle"></div>
+			<div class="menu-name">MENU</div>
 
-        <article> 
-            <div class="container_copy">
-                <h3>NOV. 2, 2029</h3>
-                <h1>Photo Profolio</h1>
-                <p>A few of my favorite pictures of flowers.</p>
-            </div>
-            <a class="btn_primary" target="_parent" href='../../projects/photography.html'>Read More</a>
-        </article>
-        
-        <p><br></p>
-        <div class="flex-parent jc-center">
-            <div class="pagination">
-                <a href="#">&laquo;</a>
-                <a href="crypto.html">1</a>
-                <a href="crypto2.html">2</a>
-                <a href="crypto3.html" class="active">3</a>
-                <a href="crypto4.html">4</a>
-                <a href="crypto5.html">5</a>
-                <a href="crypto6.html">Last</a>
-                <a href="#">&raquo;</a>
-            </div>
-        </div>
-        <p><hr class="bluegrey"></p>
+		<ul id="menu">
+			<a href="../../../index.html"> <li>Home</li></a>
+			<a href="../../about.html"> <li>About</li></a>
+			<a href="../../projects.html"> <li>Projects</li></a>
+			<a href="../../contact.html"> <li>Contact</li></a>
+		</ul>
+		</a>	
+	
+		<!-- End of Nav Bar!! -->
+        <main>
+            <article> 
+                <div class="container_copy">
+                    <h3>NOV. 2, 2029</h3>
+                    <h1>Photo Profolio</h1>
+                    <p>A few of my favorite pictures of flowers.</p>
+                </div>
+                <a class="btn_primary" target="_parent" href='../../projects/photography.html'>Read More</a>
+            </article>
 
-            <p style="text-align:center;">Where to Find Me <br><br>
-            <a href="mailto:limesoda314@gmail.com" class="fa fa-google"></a>
-            <a href="https://www.linkedin.com/in/ann-marina-miyaguchi-5aa810164/" class="fa fa-linkedin"></a>
-            <a href="https://github.com/limesoda314" class="fa fa-github"></a></p>
-        </div>
+            <article> 
+                <div class="container_copy">
+                    <h3>NOV. 2, 2029</h3>
+                    <h1>Photo Profolio</h1>
+                    <p>A few of my favorite pictures of flowers.</p>
+                </div>
+                <a class="btn_primary" target="_parent" href='../../projects/photography.html'>Read More</a>
+            </article>
+            
+            <p><br></p>
+            <div class="flex-parent jc-center">
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="crypto.html">1</a>
+                    <a href="crypto2.html">2</a>
+                    <a href="crypto3.html" class="active">3</a>
+                    <a href="crypto4.html">4</a>
+                    <a href="crypto5.html">5</a>
+                    <a href="crypto6.html">Last</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </div>
+            <p><hr class="bluegrey"></p>
 
+                <p style="text-align:center;">Where to Find Me <br><br>
+                <a href="mailto:limesoda314@gmail.com" class="fa fa-google"></a>
+                <a href="https://www.linkedin.com/in/ann-marina-miyaguchi-5aa810164/" class="fa fa-linkedin"></a>
+                <a href="https://github.com/limesoda314" class="fa fa-github"></a></p>
+            </div>
+        </main>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="../../../javascript/navbar.js"></script>
     </body>
+
+</html>
