@@ -31,3 +31,4 @@ function resizeIframeWidth(e){
   else (e.contentDocument && e.contentDocument.body.offsetWidth) //standards compliant syntax – ie8
       e.width = e.contentDocument.body.offsetWidth + 35;
 }
+
