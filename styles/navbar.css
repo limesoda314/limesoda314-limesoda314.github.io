@@ -57,7 +57,8 @@ body {
 }
 
 #menu {
-	position: fixed;
+    position: fixed;
+    z-index: 10;
 	left: calc(100% - 292px);
 	top: 10px;
 	color: black;
@@ -91,7 +92,6 @@ body {
 
 #menu a li:hover:after {
 }
-
 
 
 #menu a {
