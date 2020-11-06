@@ -8,7 +8,6 @@
 		<link rel="stylesheet" href="styles/style.css" />
 		<link rel="stylesheet" href="styles/navbar.css" />
 		<link rel="stylesheet" href="styles/blog-cards.css"/>
-		<link rel="stylesheet" href="styles/pagation.css"/>
 		<link rel="stylesheet" href="styles/zoomhover.css"/>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>  
@@ -16,7 +15,14 @@
 	</head>
 		<!-- Navbar! -->
 		<body>
+			<input type="checkbox" class="theme-switch" id="theme-switch" />
+			<div id="page">
+			<div id="content">
+				<header>
+				<label for="theme-switch" class="switch-label"></label>
+				</header>
 		
+
 			<div class="bg-cover"></div>
 			<a class="hamburger-shell">
 				<div class="hamb top"></div>
@@ -56,5 +62,33 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script defer src="javascript/navbar.js"></script>
+		</div>
+
+
+		<script>
+			// This code is only used to remember theme selection between page loads
+			const themeSwitch = document.querySelector('.theme-switch');
+			themeSwitch.checked = localStorage.getItem('switchedTheme') === 'true';
+	  
+			themeSwitch.addEventListener('change', function(e) {
+			  if (e.currentTarget.checked === true) {
+				// Add item to localstorage
+				localStorage.setItem('switchedTheme', 'true');
+			  } else {
+				// Remove item if theme is switched back to normal
+				localStorage.removeItem('switchedTheme');
+			  }
+			});
+		</script>
 	</body>
+	<footer>
+		<p style="text-align:center;">Where to Find Me <br><br>
+			<a href="mailto:limesoda314@gmail.com" class="fa fa-google"></a>
+			<a href="https://www.linkedin.com/in/ann-marina-miyaguchi-5aa810164/" class="fa fa-linkedin"></a>
+			<a href="https://github.com/limesoda314" class="fa fa-github"></a></p>
+	</footer>
+
+	
+</div>
+</div>
 </html>
