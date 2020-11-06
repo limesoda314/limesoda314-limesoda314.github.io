@@ -27,6 +27,7 @@
 	display: block;
 	pointer-events: auto;
 	visibility: visible;
+	z-index: 10;
 }
 
 .hamburger-shell {
@@ -38,6 +39,7 @@
 	overflow: auto;
 	left: calc(100% - 100px);
 	top: 20px;
+	z-index: 20;
 }
 
 .top, .middle{
@@ -80,19 +82,23 @@
 	list-style: none;
 	color: #555;
 	transition: all 150ms ease;
+
 }
 
 #menu a li:hover {
 	color: #00abff;
 	padding-right: 3px;
+
 }
 
 #menu a li:hover:after {
+
 }
 
 
 #menu a {
 	text-decoration: none;
+
 }
 
 .rotate {
@@ -133,6 +139,7 @@
 	top: 56px;
 	left: -1px;
 	transition: all 350ms;
+	z-index: 100;
 }
 
 .bump {
