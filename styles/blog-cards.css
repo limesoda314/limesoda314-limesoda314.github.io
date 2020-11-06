@@ -73,7 +73,6 @@ body, html {
     box-shadow: 1px 10px 2rem rgba(255, 94, 98, 0.5);
     transition: all .2s ease-in;
     text-decoration: none;
-    gap: 6px;
   }
   
  .tablink:hover {
@@ -93,6 +92,7 @@ body, html {
     justify-content: space-around;
     flex-wrap: wrap; 
   }
+
   .jc-center {
     justify-content: center; 
   }
