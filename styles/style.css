@@ -8,16 +8,18 @@
   --light-switch-icon: "🌚";
   --light-switch-text: "dark mode?";
   --light-text: #222430;
-  --light-bg: #f7f7f7;
+  --light-bg: #AFD275;
   --light-theme: #d34a97;
+  --light-extra: #ffffff; 
 
   /* Dark mode */
   --dark-switch-shadow: #fce477;
   --dark-switch-icon: "🌝";
   --dark-switch-text: "light mode?";
   --dark-text: #f7f7f7;
-  --dark-bg: #222430;
+  --dark-bg: #1A1A1D;
   --dark-theme: #bd93f9;
+  --dark-extra: #4E4E50;
 
   /* Default mode */
   --switch-shadow-color: var(--dark-switch-shadow);
@@ -26,6 +28,7 @@
   --text-color: var(--dark-text);
   --bg-color: var(--dark-bg);
   --theme-color: var(--dark-theme);
+  --theme-extra: var(--dark-extra);
   
 }
 
@@ -37,6 +40,7 @@
   --text-color: var(--light-text);
   --bg-color: var(--light-bg);
   --theme-color: var(--light-theme);
+  --theme-extra: var(--light-extra);
 }
 
 /* Theme switcher */
@@ -131,6 +135,7 @@ main {
 
 article {
   margin-top: 3rem; 
+  background: var(--theme-extra);
   align-self: center;
   max-width: 100ch;
   padding: 3rem;
@@ -187,14 +192,17 @@ p {
     font-size: 2rem;
     letter-spacing: 0.5px;
   }
+
+
+  }
+
+  @media only screen and (max-width: 350px) {
   :root {
     --light-switch-icon: "🌑";
     --dark-switch-icon: "🌕";
   }
-
-
+  
   }
-
 /*SOCIAL MEDIA BUTTONS*/
  /* Style all font awesome icons */
 .fa {
