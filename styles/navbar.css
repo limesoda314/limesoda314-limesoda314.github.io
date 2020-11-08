@@ -44,8 +44,8 @@
 
 .top, .middle{
 	position: absolute;
-	width: 62px;
-	height: 10px;
+	width: 50px;
+	height: 7px;
 	background-color:var(--text-color);
 	transition: all 350ms ease-in-out;
 	top: 20px;
@@ -69,7 +69,7 @@
 	font-size: 20px;
 	text-transform: uppercase;
 	color: var(--text-color);
-	padding: 24px;
+	padding: 20px;
 	width: 200px;
 	text-align: right;
 }
@@ -133,7 +133,7 @@
 	font-family: Verdana;
 	font-weight: 900;
 	color: var(--text-color);
-	font-size: 19.5px;
+	font-size: 1rem;
 	text-decoration: none;
 	position: absolute;
 	top: 56px;
