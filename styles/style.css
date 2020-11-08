@@ -5,19 +5,19 @@
   font-family: 'Open Sans';
   /* Light mode */
   --light-switch-shadow: #373d4e;
-  --light-switch-icon: "🌚";
+  --light-switch-icon: "🌑";
   --light-switch-text: "dark mode?";
   --light-text: #222430;
-  --light-bg: #AFD275;
+  --light-bg:#e7f1ca;
   --light-theme: #d34a97;
   --light-extra: #ffffff; 
 
   /* Dark mode */
   --dark-switch-shadow: #fce477;
-  --dark-switch-icon: "🌝";
+  --dark-switch-icon: "🌕";
   --dark-switch-text: "light mode?";
   --dark-text: #f7f7f7;
-  --dark-bg: #1A1A1D;
+  --dark-bg: #222222;
   --dark-theme: #bd93f9;
   --dark-extra: #4E4E50;
 
@@ -116,7 +116,7 @@ footer {
   margin: 50px 0;
   margin-top: auto;
   align-self: center;
-  border-top: 1px solid var(--text-color);
+
 }
 
 
@@ -124,6 +124,7 @@ footer {
 body {
   display: flex;
   flex-direction: column;
+  
 }
 
 main {
@@ -131,6 +132,7 @@ main {
   align-self: center;
   max-width: 80ch;
   padding: 3rem;
+  min-height: 600px;
 }
 
 article {
@@ -144,12 +146,25 @@ article {
 }
 
 article.regular {
+  margin-top: 3rem; 
+  background: var(--theme-extra);
+  align-self: center;
+  max-width: 100ch;
+  padding: 2rem;
+  border-radius: none;
   box-shadow: none;
 }
 
 hr.bluegrey {
   border: none;       /*Gets rid of the ugly line underneath the dots*/
-  border-top: 1px dotted #999999; 
+  border-top: 1px solid #999999; 
+  margin: 0.5em auto;
+  padding:0;
+}
+
+p.header {
+  margin: 0;
+  padding: 0; 
 }
 
 
@@ -196,14 +211,7 @@ p {
 
   }
 
-  @media only screen and (max-width: 350px) {
-  :root {
-    --light-switch-icon: "🌑";
-    --dark-switch-icon: "🌕";
-  }
-  
-  }
-/*SOCIAL MEDIA BUTTONS*/
+
  /* Style all font awesome icons */
 .fa {
   padding: 20px;

@@ -8,28 +8,29 @@
 		<link rel="stylesheet" href="styles/style.css" />
 		<link rel="stylesheet" href="styles/navbar.css" />
 		<link rel="stylesheet" href="styles/blog-cards.css"/>
-		<link rel="stylesheet" href="styles/zoomhover.css"/>
+		<link rel="stylesheet" href="styles/images.css"/>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>  
 
 	</head>
-		<!-- Navbar! -->
+		
 		<body>
+			
 			<input type="checkbox" class="theme-switch" id="theme-switch" />
 			<div id="page">
 			<div id="content">
 				<header>
 				<label for="theme-switch" class="switch-label"></label>
-				
 				</header>
+					
 		
-
+		<!-- Navbar! -->	
 			<div class="bg-cover"></div>
 			<a class="hamburger-shell">
 				<div class="hamb top"></div>
 					<div class="hamb middle"></div>
 				<div class="menu-name">MENU</div>
-
+		
 			<ul id="menu">
 					<a href="index.html"> <li>Home</li></a>
 					<a href="html/about.html"> <li>About</li></a>
@@ -40,24 +41,35 @@
 		
 		<!-- End of Nav Bar!! -->
 		<main>
-			<h1 style="text-align:center">Hello! Welcome to my website!</h1>
-			 <p><hr class="bluegrey"></p>
+			<article class="regular">
+				<div style="text-align: center">
+					<p class="header">
+					<img id="logoImage" src="images/limesoda.png" alt = "LIMESODA"/>
+					<hr class="bluegrey">
+					<a class="active" href="index.html"> Home</a>
+					<a href="html/about.html"> About</a>
+					<a href="html/projects.html"> Projects</a>
+					<a href="html/contact.html">Contact</a>
+					<hr class="bluegrey">
+					</p>
+				</div>
 
-			<div class="flex-parent jc-center">
 
-			
-			<a class="btn_primary" target="_parent" href='html/tags/web/web.html'>#Web</a>	
-			<a class="btn_primary" target="_parent" href='html/tags/linux/linux.html'>#Linux</a>	
-			<a class="btn_primary" target="_parent" href='html/tags/notes/notes.html'>#Notes</a>	
-			<a class="btn_primary" target="_parent" href='html/tags/recent/recent.html'>#Recent</a>	
-			<a class="btn_primary" target="_parent" href='html/tags/random/random.html'>#Random</a>	
-			<a class="btn_primary" target="_parent" href='html/tags/crypto/crypto.html'>#Crypto</a>	
-			<a class="btn_primary" target="_parent" href='html/tags/reviews/reviews.html'>#Reviews</a>	
-			<a class="btn_primary" target="_parent" href='html/tags/translations/translations.html'>#Translations</a>	
-			
-			<a class="btn_primary" target="_parent" href='html/tags/writeup/writeup.html'>#Writeup</a>		
+			<h1 style="text-align:center">Welcome to my website!</h1>
+			 <p style="text-align: center">Some tags to help you navigate this site!</p>
 
-			</div>
+		<div style="text-align:center">
+			<a href='html/tags/web/web.html'>#Web</a>	
+			<a href='html/tags/linux/linux.html'>#Linux</a>	
+			<a href='html/tags/notes/notes.html'>#Notes</a>	
+			<a href='html/tags/recent/recent.html'>#Recent</a>	
+			<a href='html/tags/random/random.html'>#Random</a>	
+			<a href='html/tags/crypto/crypto.html'>#Crypto</a>	
+			<a href='html/tags/reviews/reviews.html'>#Reviews</a>	
+			<a href='html/tags/translations/translations.html'>#Translations</a>	
+			<a href='html/tags/writeup/writeup.html'>#Writeup</a>		
+		</div>
+	</article>	
 				
 		</main>		
 
