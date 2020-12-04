@@ -1,28 +1,109 @@
+:root {
+  --first-bg-color: #247BA0;
+  --second-bg-color: #1295d8;
+  --third-bg-color: #72cdf4;
+
+}
+
+
 body {
   display: flex;
   flex-direction: column;
   margin-top: 0px;
   margin-left: 0px; 
   margin-right: 0px; 
-  background-color: #b6e1f6;
+  background: linear-gradient(var(--second-bg-color), var(--first-bg-color));
     
+}
+
+hero {
+  background: linear-gradient(var(--third-bg-color), var(--second-bg-color)); 
+}
+
+main {
+  display: flex; 
+  flex-flow: row wrap;
 }
 
 article {
   margin-top: 3rem; 
-  align-self: center;
-  max-width: 100ch;
-  padding: 2rem;
-  background-color: white;  
+  margin-left: 5%;
+  margin: 2.5%; 
+  padding: 2.5%;
+  max-width: 55%;
+  background-color:#f2f6f7;  
   border-radius: 15px;
+  border-style: solid;
+  border-color: #7c7e7f;
 }
+
+aside {
+  flex-direction: column; 
+  margin-top: 3rem;
+  margin: 2.5%; 
+  padding: 2.5%; 
+  max-width: 20%;
+  font-style: italic;
+  text-align: center;
+  background-color: #005581;
+  color: white; 
+  border-radius: 15px;
+  border-style: solid;
+  border-color:#7c7e7f;
+  
+}
+
+item {
+  background-color: #FFD200;
+  margin: auto;
+}
+
+.aside_image { 
+  width: 50%;
+  min-width: 150px; 
+  max-width: 250px; 
+}
+
+footer {
+  padding: 2rem; 
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  article {
+    margin-top: 3rem; 
+    margin: 2.5%; 
+    padding: 2.5%;
+    max-width: 90%;
+    background-color:#f2f6f7;  
+    border-radius: 15px;
+  }
+  
+  aside {
+    margin-top: 3rem;
+    flex-direction: row; 
+    margin: auto; 
+    padding: 2.5%; 
+    align-self: center;
+    max-width: 90%;
+
+  }
+
+  .aside_image { 
+    width: 50%;
+    min-width: 150px; 
+    max-width: 200px; 
+  }
+
+}
+  
 
 
 /*------------------TOPNAV----------------------------*/
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #32292F;
   overflow: hidden;
 }
 
@@ -40,17 +121,17 @@ article {
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: #887BB0;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: purple;
+  background-color: #F4B9B8;
   color: white;
 }
-/*----------------------------------------*/
 
-/* Container holding the image and the text */
+
+/* ---------Container holding the image with the text on it -----------*/
 .container {
     position: relative;
     text-align: center;
@@ -93,3 +174,6 @@ article {
     margin-right: auto;
     width: 50%;
   }
+
+
+  
